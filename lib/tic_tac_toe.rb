@@ -23,10 +23,6 @@ class TicTacToe
     puts "-----------"
     puts " #{board[6]} | #{board[7]} | #{board[8]} "
   end
-  
-  def display_board
-
-  end
 
   def input_to_index(userInput)
     index = userInput.to_i - 1

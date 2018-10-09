@@ -23,7 +23,7 @@ class TicTacToe
   end
 
   def input_to_index(userInput)
-    @index = userInput.to_i - 1
+    @index = userInput.to_int - 1
   end
 
   def move(boardArray, indexToFill, xOrO = "X")

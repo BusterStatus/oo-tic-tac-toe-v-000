@@ -93,29 +93,29 @@ class TicTacToe
     return FALSE
   end
 
-  def full?(board)
-    board.all? { |space| space == "X" || space == "O"}
+  def full?
+    @board.all? { |space| space == "X" || space == "O"}
   end
 
-  def draw?(board)
-    if won?(board) == FALSE && full?(board) == TRUE
+  def draw?
+    if won? == FALSE && full? == TRUE
       return TRUE
     else
       return FALSE
     end
   end
 
-  def over?(board)
-    if won?(board) != FALSE || full?(board) == TRUE || draw?(board) == TRUE
+  def over?
+    if won? != FALSE || full? == TRUE || draw? == TRUE
       return TRUE
     end
   end
 
-  def winner(board)
-    if won?(board) != FALSE
-      index = won?(board)
-      if board[index[0]] == "X" || board[index[0]] == "O"
-        return board[index[0]]
+  def winner
+    if won? != FALSE
+      index = won?
+      if @board[index[0]] == "X" || @board[index[0]] == "O"
+        return @board[index[0]]
       end
     end
   end

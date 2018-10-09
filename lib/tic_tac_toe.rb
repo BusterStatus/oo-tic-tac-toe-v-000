@@ -131,11 +131,11 @@ class TicTacToe
         puts "Cat's Game!"
       end
     end
-    if winner(board) == "X"
+    if winner == "X"
       puts "Congratulations X!"
-    elsif winner(board) == "O"
+    elsif winner == "O"
       puts "Congratulations O!"
-    elsif draw?(board) == TRUE
+    elsif draw? == TRUE
       puts "Cat's Game!"
     end
   end
